@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Construction Site/Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+  http-equiv="Content-Security-Policy"
+  content="
+    default-src 'self';
+    script-src 'self' https://www.gstatic.com 'unsafe-inline';
+   connect-src
+  'self'
+  https://*.googleapis.com
+  https://*.firebaseio.com
+  https://*.gstatic.com
+  https://identitytoolkit.googleapis.com
+  https://securetoken.googleapis.com
+  https://firestore.googleapis.com;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data:;
+    frame-src https://accounts.google.com;
+  "
+/>
+  </head>
+
+  <body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="more.html">More</a>
+
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p>Build with ease, and touch unlimited possibilities.</h1>
+      <h1>The Construction Site</h1>
+      <nav>
+      <p>Using The Construction Site, you can customize the house of your dreams with ease in our user-friendly sandbox.</p>
+      <div id="auth-section">
+  <h2>Sign in to continue</h2>
+
+  <input id="email" type="email" placeholder="Email" />
+  <input id="password" type="password" placeholder="Password" />
+
+  <button id="login-btn">Sign In</button>
+  <button id="signup-btn">Create Account</button>
+
+  <hr />
+</div>
+
+<div id="ideas-section" style="display:none;">
+  <h2>Your Ideas</h2>
+
+  <div id="ideas-grid">
+    <div class="idea-card new-idea" id="create-idea">
+      ➕ Create New Idea
+    </div>
+  </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 The Construction Site</p>
+    </footer>
+    <script type="module" src="home.js"></script>
+  </body>
+</html>

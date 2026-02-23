@@ -1,0 +1,2 @@
+shingle: { color: 0x8b0000, thumbnail: "roof-shingle.png" },
+    metal:   { color: 0x555555, thumbnail: "roof-metal.png" }

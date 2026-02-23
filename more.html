@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Construction Site / More</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="more.html">More</a>
+    </header>
+
+    <main class="more-layout">
+      <!-- LEFT: ABOUT (2/3) -->
+      <section class="about-panel">
+        <h2>Want to Learn more about the mission of The Construction Site?</h2>
+        <h1>How We Came to Be</h1>
+
+        <p>
+          I, an anonymous teenager with big dreams, started coding this site
+          because I had a vision before bed. Stupid? Yes. Cliche? Most
+          definitely. But when I came up with this idea I knew it could have
+          massive, diverse applications.
+        </p>
+
+        <p>
+          I could target the site, in a business setting, to all different
+          classes of workers who contribute to the building and furnishing of
+          modern homes. And, at the same time, I could target the site to
+          teenagers with unlimited imaginations like me.
+        </p>
+
+        <p>
+          For a couple of weeks, I had it in my head that I could build my own
+          house. But I needed a way to visualize it. I couldn’t find a simple,
+          non-complex 3D sandbox — so I thought, what if I made one myself?
+        </p>
+
+        <p>
+          The only problem was that I had no clue how to code. And nobody makes
+          it easy. So here we are — learning by building.
+        </p>
+      </section>
+
+      <!-- RIGHT: CONTACT (1/3, dark) -->
+      <section class="contact-panel">
+        <h2>Questions, Concerns, or Feedback?</h2>
+        <p>
+          Honest feedback helps this project grow. Don’t hold back.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xldvjnyy"
+          method="POST"
+          class="contact-form"
+        >
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Questions / Concerns / Feedback</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 The Construction Site</p>
+    </footer>
+  </body>
+</html>

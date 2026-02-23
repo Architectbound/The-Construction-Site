@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Sandbox</title>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js"
+    }
+  }
+  </script>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toolbar">
+    <button id="rotate-btn">Rotate (R)</button>
+  <button id="Undo-btn">Undo (Z)</button>
+  <button id="Redo-btn">Redo (Y)</button>
+  <button id="build-mode" class="mode-btn active">Build (B)</button>
+  <button id="delete-mode" class="mode-btn">Delete (D)</button>
+  <button id="Upstory-btn" class="mode-btn">Up story (])</button>
+  <button id="Downstory-btn" class="mode-btn">Down story ([)</button>
+  <button id="UpArrow-btn" class="mode-btn">Block Up (Up Arrow)</button>
+  <button id="DownArrow-btn" class="mode-btn">Block Down (Down Arrow)</button>
+</div>
+<div id="right-toolbar">
+  <h3>Indoor Walls</h3>
+ <div id="indoor-wall-items"></div>
+ <div id="indoor-wall-styles"></div>
+
+  <h3>Outdoor Walls</h3>
+ <div id="outdoor-wall-items"></div>
+ <div id="outdoor-wall-styles"></div>
+
+  <h3>Floors</h3>
+  <div id="floor-items" class="tool-section"></div>
+  <div id="floor-styles" class="style-dropdown"></div>
+
+  <h3>Blocks</h3>
+ <div id="block-items" class="tool-group"></div>
+ <div id="block-styles" class="style-group"></div>
+
+  <h3>Windows</h3>
+  <div id="window-items" class="tool-section"></div>
+  <div id="window-styles" class="style-dropdown"></div>
+
+  <h3>Doors</h3>
+  <div id="door-items" class="tool-section"></div>
+  <div id="door-styles" class="style-dropdown"></div>
+
+  <h3>Stairs</h3>
+  <div id="stair-items" class="tool-section"></div>
+  <div id="stair-styles" class="style-dropdown"></div>
+
+    <h3>Ceilings</h3>
+  <div id="ceiling-items" class="tool-section"></div>
+  <div id="ceiling-styles" class="style-dropdown"></div>
+
+  <h3>Roofs</h3>
+  <div id="roof-items" class="tool-section"></div>
+  <div id="roof-styles" class="style-dropdown"></div>
+</div>
+
+<button id="open-blueprints" class="blueprint-btn">
+  📐
+</button>
+
+<div id="color-drawer">
+  <div id="color-panel">
+    <div id="primary-color-palette"></div>
+    <div id="secondary-color-palette"></div>
+  </div>
+
+  <button id="drawer-toggle">❯</button>
+</div>
+
+  <div id="scene-container"></div>
+  <script type="module" src="./sandbox.js"></script>
+</body>
+</html>
+
+
+
+
+
+

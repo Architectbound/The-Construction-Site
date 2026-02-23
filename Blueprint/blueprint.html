@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blueprint</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <canvas id="blueprintCanvas"></canvas>
+
+  <div id="blueprintControls" style="
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #111;
+  padding: 12px;
+  border: 1px solid white;
+  color: white;
+  font-family: Arial;
+">
+
+  <div style="
+    display: grid;
+    grid-template-columns: 120px 200px;
+    gap: 10px;
+    align-items: start;
+  ">
+
+    <!-- LEFT COLUMN: STORY -->
+    <div>
+      <label style="display:block; margin-bottom:6px;">
+        Story
+      </label>
+      <select id="storySelect" style="width:100%;"></select>
+    </div>
+
+    <!-- RIGHT COLUMN: META -->
+    <div>
+      <input
+        id="clientInput"
+        placeholder="Client Name"
+        style="margin-bottom:6px; width:100%;"
+      />
+
+      <input
+        id="titleInput"
+        placeholder="Blueprint Title"
+        style="margin-bottom:8px; width:100%;"
+      />
+
+      <button style="width:100%;" onclick="saveBlueprint()">
+        Save Blueprint
+      </button>
+    </div>
+
+  </div>
+</div>
+  </div>
+
+  <!-- JS MUST be last -->
+  <script src="blueprint.js"></script>
+
+</body>
+</html>
